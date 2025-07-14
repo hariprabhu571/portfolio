@@ -1,73 +1,130 @@
-# Welcome to your Lovable project
+# Hari Raja Prabhu - Portfolio
 
-## Project info
+A modern, responsive portfolio website showcasing my skills, projects, and professional experience as a Software Developer.
 
-**URL**: https://lovable.dev/projects/37f7e711-5c5b-4704-9473-44c34c87d2fd
+## 🚀 Live Demo
 
-## How can I edit this code?
+[View Portfolio](https://your-portfolio-url.com)
 
-There are several ways of editing your application.
+## ✨ Features
 
-**Use Lovable**
+- **Modern Design**: Clean, professional interface with glassmorphic effects
+- **Responsive**: Fully responsive design that works on all devices
+- **Interactive Elements**: Smooth animations and hover effects
+- **Dark Theme**: Elegant dark theme with cyan accent colors
+- **Performance Optimized**: Fast loading with optimized assets
+- **SEO Friendly**: Proper meta tags and structured content
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/37f7e711-5c5b-4704-9473-44c34c87d2fd) and start prompting.
+## 🛠️ Technologies Used
 
-Changes made via Lovable will be committed automatically to this repo.
+- **Frontend**: React 18 with TypeScript
+- **Styling**: Tailwind CSS with custom design system
+- **UI Components**: shadcn/ui component library
+- **Build Tool**: Vite for fast development and building
+- **Animations**: GSAP for smooth animations
+- **Icons**: Lucide React icons
+- **Fonts**: Inter font family
 
-**Use your preferred IDE**
+## 📁 Project Structure
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
+```
+src/
+├── components/
+│   ├── sections/          # Portfolio sections
+│   ├── ui/               # Reusable UI components
+│   └── Navigation.tsx    # Main navigation
+├── hooks/                # Custom React hooks
+├── lib/                  # Utility functions
+└── pages/               # Page components
 ```
 
-**Edit a file directly in GitHub**
+## 🚀 Getting Started
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+### Prerequisites
 
-**Use GitHub Codespaces**
+- Node.js (version 16 or higher)
+- npm or yarn package manager
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+### Installation
 
-## What technologies are used for this project?
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/yourusername/portfolio.git
+   cd portfolio
+   ```
 
-This project is built with:
+2. **Install dependencies**
+   ```bash
+   npm install
+   ```
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+3. **Start development server**
+   ```bash
+   npm run dev
+   ```
 
-## How can I deploy this project?
+4. **Open your browser**
+   Navigate to `http://localhost:5173` to view the application
 
-Simply open [Lovable](https://lovable.dev/projects/37f7e711-5c5b-4704-9473-44c34c87d2fd) and click on Share -> Publish.
+## 📦 Available Scripts
 
-## Can I connect a custom domain to my Lovable project?
+- `npm run dev` - Start development server
+- `npm run build` - Build for production
+- `npm run preview` - Preview production build
+- `npm run lint` - Run ESLint
+- `npm run type-check` - Run TypeScript type checking
 
-Yes, you can!
+## 🎨 Customization
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+### Colors
+The project uses a custom color palette defined in `src/index.css`:
+- **Primary**: Cyan (#00e0ff)
+- **Secondary**: Purple (#a259ff)
+- **Accent**: Pink (#ff70e0)
+- **Background**: Dark blue-gray theme
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+### Content
+Update the following files to customize your portfolio:
+- `src/components/sections/` - Edit section content
+- `public/` - Replace images and assets
+- `index.html` - Update meta tags and title
+
+## 📱 Sections
+
+1. **Hero Section** - Introduction and call-to-action
+2. **About Section** - Personal information and skills
+3. **Experience Section** - Work history and timeline
+4. **Projects Section** - Portfolio of projects
+5. **Education Section** - Academic background
+6. **Achievements Section** - Certifications and awards
+7. **Contact Section** - Contact information and form
+
+## 🔧 Configuration
+
+### Environment Variables
+Create a `.env` file in the root directory for any environment-specific configurations.
+
+### Build Configuration
+The project uses Vite for building. Configuration can be modified in `vite.config.ts`.
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 🤝 Contributing
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+## 📞 Contact
+
+- **LinkedIn**: [Hari Raja Prabhu](https://www.linkedin.com/in/hari-raja-prabhu/)
+- **GitHub**: [@hariprabhu571](https://github.com/hariprabhu571)
+- **Email**: your.email@example.com
+
+---
+
+**Built with ❤️ by Hari Raja Prabhu**

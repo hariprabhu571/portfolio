@@ -62,7 +62,7 @@ const Preloader = ({ onComplete }: PreloaderProps) => {
       {/* Logo/Name */}
       <div ref={logoRef} className="text-center mb-8">
         <h1 className="text-6xl md:text-8xl font-bold text-glow bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent">
-          HRP
+          PORTFOLIO
         </h1>
         <p className="text-xl md:text-2xl text-muted-foreground mt-4 font-light tracking-wide">
           Hari Raja Prabhu P
