@@ -137,32 +137,32 @@ const ContactSection = () => {
   };
 
   return (
-    <section id="contact" ref={sectionRef} className="py-20 lg:py-32 relative overflow-hidden">
+    <section id="contact" ref={sectionRef} className="py-12 sm:py-16 lg:py-32 relative overflow-hidden">
       {/* Background Effects */}
       <div className="absolute inset-0">
-        <div className="glow-orb w-80 h-80 top-1/4 left-1/4 animate-orbit opacity-10"></div>
-        <div className="glow-orb w-60 h-60 bottom-1/4 right-1/4 animate-orbit opacity-10" style={{ animationDelay: '-15s' }}></div>
+        <div className="glow-orb w-40 h-40 sm:w-60 sm:h-60 lg:w-80 lg:h-80 top-1/4 left-1/4 animate-orbit opacity-10"></div>
+        <div className="glow-orb w-32 h-32 sm:w-40 sm:h-40 lg:w-60 lg:h-60 bottom-1/4 right-1/4 animate-orbit opacity-10" style={{ animationDelay: '-15s' }}></div>
       </div>
 
-      <div className="container mx-auto px-6 relative z-10">
+      <div className="container mx-auto px-4 sm:px-6 relative z-10">
         
         {/* Section Title */}
-        <div className="text-center mb-16">
-          <h2 className="contact-title text-4xl lg:text-6xl font-bold">
+        <div className="text-center mb-8 sm:mb-12 lg:mb-16">
+          <h2 className="contact-title text-3xl sm:text-4xl lg:text-6xl font-bold">
             <span className="text-glow bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent">
               Let's Connect
             </span>
           </h2>
-          <p className="text-xl text-muted-foreground mt-4 max-w-2xl mx-auto">
+          <p className="text-base sm:text-lg lg:text-xl text-muted-foreground mt-3 sm:mt-4 max-w-2xl mx-auto px-4">
             Ready to bring your ideas to life? Let's discuss your next project
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-16 max-w-6xl mx-auto">
+        <div className="grid lg:grid-cols-2 gap-8 sm:gap-12 lg:gap-16 max-w-6xl mx-auto">
           
           {/* Contact Form */}
-          <div>
-            <form ref={formRef} onSubmit={handleSubmit} className="space-y-6">
+          <div className="order-2 lg:order-1">
+            <form ref={formRef} onSubmit={handleSubmit} className="space-y-4 sm:space-y-6">
               
               <div className="form-input">
                 <label htmlFor="name" className="block text-sm font-medium mb-2 text-muted-foreground">
@@ -175,7 +175,7 @@ const ContactSection = () => {
                   value={formData.from_name}
                   onChange={handleInputChange}
                   required
-                  className="w-full px-4 py-4 glass-card rounded-xl border border-border/30 bg-transparent text-foreground placeholder-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary transition-all duration-300"
+                  className="w-full px-3 sm:px-4 py-3 sm:py-4 glass-card rounded-xl border border-border/30 bg-transparent text-foreground placeholder-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary transition-all duration-300 text-sm sm:text-base"
                   placeholder="Enter Name"
                 />
               </div>
@@ -191,7 +191,7 @@ const ContactSection = () => {
                   value={formData.from_email}
                   onChange={handleInputChange}
                   required
-                  className="w-full px-4 py-4 glass-card rounded-xl border border-border/30 bg-transparent text-foreground placeholder-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary transition-all duration-300"
+                  className="w-full px-3 sm:px-4 py-3 sm:py-4 glass-card rounded-xl border border-border/30 bg-transparent text-foreground placeholder-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary transition-all duration-300 text-sm sm:text-base"
                   placeholder="Enter Email"
                 />
               </div>
@@ -206,17 +206,17 @@ const ContactSection = () => {
                   value={formData.message}
                   onChange={handleInputChange}
                   required
-                  rows={6}
-                  className="w-full px-4 py-4 glass-card rounded-xl border border-border/30 bg-transparent text-foreground placeholder-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary transition-all duration-300 resize-none"
+                  rows={4}
+                  className="w-full px-3 sm:px-4 py-3 sm:py-4 glass-card rounded-xl border border-border/30 bg-transparent text-foreground placeholder-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary transition-all duration-300 resize-none text-sm sm:text-base"
                   placeholder="Enter Your Thoughts..."
                 />
               </div>
 
               <button
                 type="submit"
-                className="submit-button w-full neon-button px-8 py-4 rounded-xl text-lg font-semibold flex items-center justify-center space-x-2 hover:scale-105 transition-transform duration-300"
+                className="submit-button w-full neon-button px-6 sm:px-8 py-3 sm:py-4 rounded-xl text-base sm:text-lg font-semibold flex items-center justify-center space-x-2 hover:scale-105 transition-transform duration-300"
               >
-                <Send size={20} />
+                <Send size={18} className="sm:w-5 sm:h-5" />
                 <span>Send Message</span>
               </button>
 
@@ -224,69 +224,69 @@ const ContactSection = () => {
           </div>
 
           {/* Contact Information */}
-          <div className="contact-info-container space-y-8">
+          <div className="contact-info-container space-y-6 sm:space-y-8 order-1 lg:order-2">
             
-            <div className="contact-info glass-card p-8 rounded-2xl">
-              <div className="flex items-center space-x-4 mb-4">
-                <div className="p-3 rounded-xl bg-gradient-to-r from-primary to-secondary">
-                  <Mail className="text-white" size={24} />
+            <div className="contact-info glass-card p-6 sm:p-8 rounded-2xl">
+              <div className="flex items-center space-x-3 sm:space-x-4 mb-3 sm:mb-4">
+                <div className="p-2 sm:p-3 rounded-xl bg-gradient-to-r from-primary to-secondary">
+                  <Mail className="text-white" size={20} className="sm:w-6 sm:h-6" />
                 </div>
                 <div>
-                  <h3 className="text-lg font-semibold">Email</h3>
-                  <p className="text-muted-foreground">hariprabhu571@gmail.com</p>
+                  <h3 className="text-base sm:text-lg font-semibold">Email</h3>
+                  <p className="text-sm sm:text-base text-muted-foreground break-all">hariprabhu571@gmail.com</p>
                 </div>
               </div>
             </div>
 
-            <div className="contact-info glass-card p-8 rounded-2xl">
-              <div className="flex items-center space-x-4 mb-4">
-                <div className="p-3 rounded-xl bg-gradient-to-r from-secondary to-accent">
-                  <Phone className="text-white" size={24} />
+            <div className="contact-info glass-card p-6 sm:p-8 rounded-2xl">
+              <div className="flex items-center space-x-3 sm:space-x-4 mb-3 sm:mb-4">
+                <div className="p-2 sm:p-3 rounded-xl bg-gradient-to-r from-secondary to-accent">
+                  <Phone className="text-white" size={20} className="sm:w-6 sm:h-6" />
                 </div>
                 <div>
-                  <h3 className="text-lg font-semibold">Phone</h3>
-                  <p className="text-muted-foreground">+91 8940645820</p>
+                  <h3 className="text-base sm:text-lg font-semibold">Phone</h3>
+                  <p className="text-sm sm:text-base text-muted-foreground">+91 8940645820</p>
                 </div>
               </div>
             </div>
 
-            <div className="contact-info glass-card p-8 rounded-2xl">
-              <div className="flex items-center space-x-4 mb-4">
-                <div className="p-3 rounded-xl bg-gradient-to-r from-accent to-primary">
-                  <MapPin className="text-white" size={24} />
+            <div className="contact-info glass-card p-6 sm:p-8 rounded-2xl">
+              <div className="flex items-center space-x-3 sm:space-x-4 mb-3 sm:mb-4">
+                <div className="p-2 sm:p-3 rounded-xl bg-gradient-to-r from-accent to-primary">
+                  <MapPin className="text-white" size={20} className="sm:w-6 sm:h-6" />
                 </div>
                 <div>
-                  <h3 className="text-lg font-semibold">Location</h3>
-                  <p className="text-muted-foreground">Chennai, Tamil Nadu, India</p>
+                  <h3 className="text-base sm:text-lg font-semibold">Location</h3>
+                  <p className="text-sm sm:text-base text-muted-foreground">Chennai, Tamil Nadu, India</p>
                 </div>
               </div>
             </div>
 
             {/* Social Links */}
             <div className="contact-info">
-              <h3 className="text-xl font-semibold mb-6">Follow Me</h3>
-              <div className="flex space-x-4">
+              <h3 className="text-lg sm:text-xl font-semibold mb-4 sm:mb-6">Follow Me</h3>
+              <div className="flex flex-wrap gap-3 sm:gap-4">
                 <a
                   href="https://github.com/hariprabhu571"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="p-4 rounded-xl glass-card hover:scale-110 hover:text-primary transition-all duration-300 group"
+                  className="p-3 sm:p-4 rounded-xl glass-card hover:scale-110 hover:text-primary transition-all duration-300 group"
                 >
-                  <Github size={24} className="group-hover:scale-110 transition-transform duration-300" />
+                  <Github size={20} className="sm:w-6 sm:h-6 group-hover:scale-110 transition-transform duration-300" />
                 </a>
                 <a
                   href="https://www.linkedin.com/in/hari-raja-prabhu/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="p-4 rounded-xl glass-card hover:scale-110 hover:text-primary transition-all duration-300 group"
+                  className="p-3 sm:p-4 rounded-xl glass-card hover:scale-110 hover:text-primary transition-all duration-300 group"
                 >
-                  <Linkedin size={24} className="group-hover:scale-110 transition-transform duration-300" />
+                  <Linkedin size={20} className="sm:w-6 sm:h-6 group-hover:scale-110 transition-transform duration-300" />
                 </a>
                 <a
                   href="https://leetcode.com/u/Hariprabhu_571/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="p-4 rounded-xl glass-card hover:scale-110 hover:text-primary transition-all duration-300 group"
+                  className="p-3 sm:p-4 rounded-xl glass-card hover:scale-110 hover:text-primary transition-all duration-300 group"
                 >
                   <LeetCodeIcon />
                 </a>
@@ -294,7 +294,7 @@ const ContactSection = () => {
                   href="https://www.instagram.com/its_me_hari_3103/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="p-4 rounded-xl glass-card hover:scale-110 hover:text-primary transition-all duration-300 group"
+                  className="p-3 sm:p-4 rounded-xl glass-card hover:scale-110 hover:text-primary transition-all duration-300 group"
                 >
                   <InstagramIcon />
                 </a>
@@ -302,7 +302,7 @@ const ContactSection = () => {
                   href="https://x.com/harirajaprabhu3"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="p-4 rounded-xl glass-card hover:scale-110 hover:text-primary transition-all duration-300 group"
+                  className="p-3 sm:p-4 rounded-xl glass-card hover:scale-110 hover:text-primary transition-all duration-300 group"
                 >
                   <XIcon />
                 </a>
@@ -310,7 +310,7 @@ const ContactSection = () => {
                   href="https://topmate.io/harirajaprabhu"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="p-4 rounded-xl glass-card hover:scale-110 hover:text-primary transition-all duration-300 group"
+                  className="p-3 sm:p-4 rounded-xl glass-card hover:scale-110 hover:text-primary transition-all duration-300 group"
                 >
                   <TopmateIcon />
                 </a>
